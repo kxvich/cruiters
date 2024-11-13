@@ -1,0 +1,82 @@
+$color-primary: #cfff49;
+$color-black: #000000;
+$color-white2: #aeb2bb;
+
+.Header {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: $color-primary;
+	position: relative;
+
+	&Left {
+		height: 98%;
+		width: 45%;
+		background-image: url("/pexels-adrien-olichon-1257089-2387793.jpg");
+        position: relative;
+
+        &ButtonContainer{
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+        }
+
+        &Button {
+			background-color: $color-primary;
+			border: none;
+			padding: 1.5rem 3rem;
+			font-family: "oswald", serif;
+			font-weight: bold;
+		}
+	}
+	&Right {
+		padding-left: 3rem;
+		height: 100%;
+		width: 55%;
+		background-color: $color-primary;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: "editor's note", sans-serif;
+
+		// &TextContainer1 {
+		// }
+		&TextContainer2 {
+			display: flex;
+			align-items: center;
+
+			&Main {
+				margin-right: 1rem;
+			}
+
+			&Sub {
+				font-size: 1.3rem;
+				letter-spacing: 0.2rem;
+				font-family: "oswald", serif;
+			}
+		}
+		// &TextContainer3 {
+		// }
+		&TextContainer4 {
+			position: absolute;
+			bottom: 2rem;
+			right: 2rem;
+		}
+
+		h1 {
+			font-size: 10rem;
+		}
+		h2 {
+			font-size: 3rem;
+		}
+		h4 {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			font-family: "oswald", serif;
+            text-align: center;
+		}
+		span {
+			display: block;
+		}
+	}
+}

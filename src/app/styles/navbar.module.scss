@@ -1,0 +1,25 @@
+$color-white2: #aeb2bb;
+.NavBar {
+	padding: 1rem 1.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	&List {
+		display: flex;
+		justify-content: space-between;
+		font-family: "oswald", serif;
+
+		&Item {
+			font-size: 1.5rem;
+			letter-spacing: 0.1rem;
+		}
+	}
+}
+
+.Menu {
+	color: $color-white2;
+}
+
+.Name {
+	font-family: "Editor's Note", sans-serif;
+}

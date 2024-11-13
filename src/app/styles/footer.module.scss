@@ -1,0 +1,116 @@
+$color-primary: #cfff49;
+$color-black: #000000;
+$color-black2: #1e1e1e;
+$color-black3: #6b7379;
+$color-white: #ffffff;
+$color-white2: #aeb2bb;
+
+.Footer {
+	height: 50rem;
+	background-color: $color-black;
+	padding: 2rem 7rem;
+	color: $color-primary;
+
+	&Top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10rem;
+	}
+
+	&Logo {
+		&Text {
+			color: $color-primary;
+			font-family: "editor's note", sans-serif;
+			font-size: 4rem;
+		}
+	}
+	&HeadingText {
+		font-family: "oswald", serif;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	&NavigationLinksContainer {
+		display: flex;
+		font-family: "oswald", serif;
+		gap: 2rem;
+	}
+
+	&NavigationLinksItem {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: $color-white2;
+	}
+
+	&Center {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10rem;
+
+		&Heading {
+			color: $color-white2;
+			font-family: "oswald", serif;
+			letter-spacing: 0.2rem;
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		&Links {
+			color: $color-white;
+			font-size: 1.3rem;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+				Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+				sans-serif;
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	&Bottom {
+		display: flex;
+		justify-content: space-between;
+		width: 70%;
+
+		&Item1 {
+			color: $color-white2;
+
+			&Paragraph {
+				font-size: 1.5rem;
+				font-family: "oswald", serif;
+				margin-bottom: 1rem;
+			}
+
+			&List {
+				display: flex;
+				font-size: 1.5rem;
+				font-family: "oswald", serif;
+				gap: 2rem;
+			}
+		}
+
+		&Item2 {
+			background-color: $color-white2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 3rem;
+			width: 45%;
+			&List {
+				display: flex;
+				color: $color-black;
+				align-items: center;
+				gap: 1rem;
+				font-family: "oswald", serif;
+				font-size: 1.3rem;
+				font-weight: bold;
+			}
+			&Link {
+				background-color: $color-black;
+                color: $color-white;
+                padding: 1rem 3rem;
+                border-radius: 3rem;
+			}
+		}
+	}
+}
