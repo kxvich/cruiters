@@ -1,12 +1,13 @@
 $color-white2: #aeb2bb;
 .NavBar {
 	padding: 1rem 1.5rem;
-	position: fixed;
+	position: absolute;
 	width: 100%;
-	z-index: 10;
+	z-index: 200;
 	&List {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		font-family: "oswald", serif;
 
 		&Item {
@@ -18,8 +19,14 @@ $color-white2: #aeb2bb;
 
 .Menu {
 	color: $color-white2;
+	cursor: pointer;
 }
 
 .Name {
 	font-family: "Editor's Note", sans-serif;
+	cursor: pointer;
+}
+
+.Signin {
+	cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import "./globals.scss";
+import "lenis/dist/lenis.css";
 
 export const metadata = {
 	title: "Cruiters",

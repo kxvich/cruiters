@@ -11,6 +11,9 @@ $color-white2: #aeb2bb;
 }
 .sectionDescription {
 	margin-bottom: 20rem;
+	&ParagraphContainer {
+		margin-bottom: 7rem;
+	}
 	&Paragraph {
 		font-family: "Editor's note", sans-serif;
 		font-size: 3rem;
@@ -18,7 +21,7 @@ $color-white2: #aeb2bb;
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
-		margin-bottom: 7rem;
+		margin-bottom: 0.5rem;
 	}
 	&Heading1Background {
 		background-image: linear-gradient(
@@ -27,6 +30,7 @@ $color-white2: #aeb2bb;
 			$color-primary 50%,
 			$color-black 50%
 		);
+		height: 6.5rem;
 		padding: 1rem 0 1rem 2rem;
 		margin-bottom: 2rem;
 	}
@@ -34,13 +38,16 @@ $color-white2: #aeb2bb;
 		font-size: 3rem;
 		font-family: "editor's note", sans-serif;
 	}
+	&ParagraphContainer2 {
+		margin-bottom: 10rem;
+	}
 	&Paragraph2 {
 		color: $color-white;
 		font-family: "oswald", serif;
 		padding-left: 2rem;
 		font-size: 2rem;
 		width: 50%;
-		margin-bottom: 5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	&Heading2Background {
@@ -61,13 +68,16 @@ $color-white2: #aeb2bb;
 		position: absolute;
 		left: 52%;
 	}
+	&ParagraphContainer3 {
+		margin-bottom: 10rem;
+	}
 	&Paragraph3 {
 		color: $color-white;
 		font-family: "oswald", serif;
 		padding-left: 52%;
 		font-size: 2rem;
 		width: 100%;
-		margin-bottom: 4rem;
+		margin-bottom: 0.5rem;
 	}
 
 	&ButtonContainer {
@@ -80,6 +90,14 @@ $color-white2: #aeb2bb;
 		padding: 1.5rem 3rem;
 		font-family: "oswald", serif;
 		font-weight: bold;
+		cursor: pointer;
+		border: 1px solid $color-primary;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: transparent;
+			color: $color-primary;
+		}
 	}
 }
 
@@ -100,6 +118,7 @@ $color-white2: #aeb2bb;
 		&Item {
 			background-color: $color-black;
 			padding: 1rem 0 1rem 2rem;
+			height: 6.5rem;
 			&:not(:last-child) {
 				margin-bottom: 2rem;
 			}
@@ -173,10 +192,13 @@ $color-white2: #aeb2bb;
 			font-size: 1.5rem;
 			font-weight: bold;
 		}
+		&TextContainer {
+			margin-bottom: 3rem;
+		}
 		&Text {
 			font-size: 2.5rem;
 			font-family: "oswald", serif;
-			margin-bottom: 3rem;
+			margin-bottom: 0.5rem;
 		}
 	}
 
@@ -187,6 +209,14 @@ $color-white2: #aeb2bb;
 		font-size: 1.5rem;
 		border: none;
 		color: $color-primary;
+		cursor: pointer;
+		border: 1px solid $color-black;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: transparent;
+			color: $color-black;
+		}
 	}
 }
 
@@ -194,8 +224,8 @@ $color-white2: #aeb2bb;
 	background-color: $color-primary;
 	padding: 4rem 0;
 
-    &HeadingBackground{
-        background-image: linear-gradient(
+	&HeadingBackground {
+		background-image: linear-gradient(
 			120deg,
 			$color-black 0%,
 			$color-black 50%,
@@ -203,37 +233,45 @@ $color-white2: #aeb2bb;
 		);
 		padding: 1rem 0 1rem 2rem;
 		margin-bottom: 2rem;
-    }
-
-    &Heading {
-		font-size: 3rem;
-		font-family: "editor's note", sans-serif;
-        color: $color-primary;
+		height: 6.5rem;
 	}
 
-    &Item{
-        width: 49%;
-        height: 5rem;
-        background-color: $color-black;
-        display: flex;
-        align-items: center;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
+	&Heading {
+		font-size: 3rem;
+		font-family: "editor's note", sans-serif;
+		color: $color-primary;
+	}
 
-        &Text{
-            color: $color-primary;
-            font-family: "oswald",serif;
-            font-size: 2rem;
-        }
-    }
+	&Item {
+		width: 49%;
+		height: 5rem;
+		background-color: $color-black;
+		display: flex;
+		align-items: center;
+		padding-left: 2rem;
+		margin-bottom: 2rem;
 
-    &Button{
-        padding: 1.5rem 2rem;
+		&Text {
+			color: $color-primary;
+			font-family: "oswald", serif;
+			font-size: 2rem;
+		}
+	}
+
+	&Button {
+		padding: 1.5rem 2rem;
 		background-color: $color-black;
 		font-family: "oswald", serif;
 		font-size: 1.5rem;
 		border: none;
 		color: $color-primary;
-        
-    }
+		cursor: pointer;
+		border: 1px solid $color-black;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: transparent;
+			color: $color-black;
+		}
+	}
 }
