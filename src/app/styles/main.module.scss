@@ -11,17 +11,64 @@ $color-white2: #aeb2bb;
 }
 .sectionDescription {
 	margin-bottom: 20rem;
+	@media only screen and (max-width: 56.25rem) {
+		margin-bottom: 10rem;
+	}
+	@media only screen and (max-width: 26.875rem) {
+		margin-bottom: 5rem;
+	}
+	@media only screen and (max-width: 23.75rem) {
+		margin-bottom: 5rem;
+	}
 	&ParagraphContainer {
 		margin-bottom: 7rem;
+		@media only screen and (max-width: 23.75rem) {
+			margin-bottom: 3rem;
+		}
 	}
 	&Paragraph {
-		font-family: "Editor's note", sans-serif;
+		font-family: "oswald", serif;
 		font-size: 3rem;
 		color: $color-white;
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
 		margin-bottom: 0.5rem;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 1.7rem;
+			width: 100%;
+		}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.5rem;
+			width: 80%;
+			margin-bottom: 0.2rem;
+		}
+		@media only screen and (max-width: 30rem) {
+			font-size: 2.4rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 2.1rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
+		@media only screen and (max-width: 25rem) {
+			font-size: 1.9rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
+
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.8rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
+		@media only screen and (max-width: 20rem) {
+			font-size: 1.5rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
 	}
 	&Heading1Background {
 		background-image: linear-gradient(
@@ -31,15 +78,62 @@ $color-white2: #aeb2bb;
 			$color-black 50%
 		);
 		height: 6.5rem;
-		padding: 1rem 0 1rem 2rem;
+		position: relative;
 		margin-bottom: 2rem;
+		@media only screen and (max-width: 56.25rem) {
+			height: 5.5rem;
+			background-image: none;
+			background-color: $color-primary;
+			justify-content: center;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			height: 5rem;
+			background-image: none;
+			background-color: $color-primary;
+			justify-content: center;
+			padding-left: 0;
+		}
+
+		@media only screen and (max-width: 23.75rem) {
+			height: 4.5rem;
+			background-image: none;
+			background-color: $color-primary;
+			justify-content: center;
+			padding-left: 0;
+		}
 	}
 	&Heading1 {
 		font-size: 3rem;
 		font-family: "editor's note", sans-serif;
+		position: absolute;
+		top: 50%;
+		left: 2rem;
+		transform: translateY(-50%) !important;
+
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 2rem;
+			left: 50%;
+			transform: translate(-50%, -50%) !important;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 2.1rem;
+		}
+
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.8rem;
+		}
 	}
 	&ParagraphContainer2 {
-		margin-bottom: 10rem;
+		margin-bottom: 8rem;
+		@media only screen and (max-width: 56.25rem) {
+			margin-bottom: 5rem;
+			text-align: center;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			margin-bottom: 3rem;
+			text-align: center;
+		}
 	}
 	&Paragraph2 {
 		color: $color-white;
@@ -48,8 +142,50 @@ $color-white2: #aeb2bb;
 		font-size: 2rem;
 		width: 50%;
 		margin-bottom: 0.5rem;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 1.7rem;
+			width: 90%;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.4rem;
+			width: 80%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 30rem) {
+			font-size: 2.4rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 2rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 25rem) {
+			font-size: 1.9rem;
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 0.1rem;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.8rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 20rem) {
+			font-size: 1.5rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
 	}
-
 	&Heading2Background {
 		background-image: linear-gradient(
 			60deg,
@@ -57,20 +193,102 @@ $color-white2: #aeb2bb;
 			$color-black 50%,
 			$color-primary 50%
 		);
-		padding: 1rem 0;
 		margin-bottom: 2rem;
 		position: relative;
 		height: 6.5rem;
+
+		@media only screen and (max-width: 56.25rem) {
+			height: 5.5rem;
+			background-image: none;
+			background-color: $color-primary;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			height: 5rem;
+		}
+
+		@media only screen and (max-width: 23.75rem) {
+			height: 4.5rem;
+		}
 	}
 	&Heading2 {
 		font-size: 3rem;
 		font-family: "editor's note", sans-serif;
 		position: absolute;
-		left: 52%;
+		top: 50%;
+		left: 52% !important;
+		transform: translateY(-50%) !important;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 2rem;
+			top: 50%;
+			left: 50% !important;
+			transform: translate(-50%, -50%) !important;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 2.1rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.8rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 	&ParagraphContainer3 {
 		margin-bottom: 10rem;
+		@media only screen and (max-width: 56.25rem) {
+			margin-bottom: 5rem;
+			text-align: center;
+		}
+		@media only screen and (max-width: 20rem) {
+			margin-bottom: 3rem;
+			text-align: center;
+		}
 	}
+	// &Paragraph3 {
+	// 	color: $color-white;
+	// 	font-family: "oswald", serif;
+	// 	padding-left: 52%;
+	// 	font-size: 2rem;
+	// 	width: 100%;
+	// 	margin-bottom: 0.5rem;
+	// 	@media only screen and (max-width: 56.25rem) {
+	// 		width: 90%;
+	// 		font-size: 1.7rem;
+	// 		padding-left: 0;
+	// 		margin: 0 auto;
+	// 	}
+	// 	@media only screen and (max-width: 30rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 80%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 26.875rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 90%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 25rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 85%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 23.75rem) {
+	// 		font-size: 1.4rem;
+	// 		width: 90%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 20rem) {
+	// 		font-size: 1.2rem;
+	// 		width: 80%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// }
 	&Paragraph3 {
 		color: $color-white;
 		font-family: "oswald", serif;
@@ -78,10 +296,56 @@ $color-white2: #aeb2bb;
 		font-size: 2rem;
 		width: 100%;
 		margin-bottom: 0.5rem;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 1.7rem;
+			width: 90%;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.4rem;
+			width: 80%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 30rem) {
+			font-size: 2.4rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 2rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 25rem) {
+			font-size: 1.9rem;
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 0.1rem;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.8rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 20rem) {
+			font-size: 1.5rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
 	}
-
 	&ButtonContainer {
 		padding-left: 2rem;
+		@media only screen and (max-width: 56.25rem) {
+			padding-left: 0;
+			text-align: center;
+		}
 	}
 
 	&Button {
@@ -93,10 +357,24 @@ $color-white2: #aeb2bb;
 		cursor: pointer;
 		border: 1px solid $color-primary;
 		transition: all 0.3s;
+		color: $color-black;
 
 		&:hover {
 			background-color: transparent;
 			color: $color-primary;
+		}
+		@media only screen and (max-width: 30rem) {
+			padding: 2rem 4rem;
+			font-size: 1.8rem;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			padding: 1.4rem 2rem;
+		}
+		@media only screen and (max-width: 25rem) {
+			padding: 1.1rem 1.7rem;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			padding: 1rem 1.5rem;
 		}
 	}
 }
@@ -107,20 +385,36 @@ $color-white2: #aeb2bb;
 	display: flex;
 	align-items: center;
 	background-color: $color-primary;
+	@media only screen and (max-width: 56.25rem) {
+		height: 40rem;
+		text-align: center;
+	}
 
 	&Left {
 		width: 50%;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+		}
 
 		&Heading {
 			font-family: "editor's note", sans-serif;
 			margin: 0 0 2rem 2rem;
+			@media only screen and (max-width: 30rem) {
+				font-size: 1.7rem;
+			}
 		}
 		&Item {
 			background-color: $color-black;
-			padding: 1rem 0 1rem 2rem;
+			display: flex;
+			align-items: center;
+			padding-left: 2rem;
 			height: 6.5rem;
 			&:not(:last-child) {
 				margin-bottom: 2rem;
+			}
+			@media only screen and (max-width: 56.25rem) {
+				justify-content: center;
+				padding-left: 0;
 			}
 			&Text {
 				font-size: 3rem;
@@ -138,6 +432,24 @@ $color-white2: #aeb2bb;
 				background-clip: text;
 				-webkit-background-clip: text;
 				background-position: bottom;
+				@media only screen and (max-width: 56.25rem) {
+					background-image: linear-gradient(
+							to right,
+							$color-primary 0%,
+							$color-primary 50%,
+							transparent 70%
+						),
+						url("/image1.jpg");
+				}
+				@media only screen and (max-width: 26.875rem) {
+					font-size: 2.7rem;
+				}
+				@media only screen and (max-width: 25rem) {
+					font-size: 2.2rem;
+				}
+				@media only screen and (max-width: 23.75rem) {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
@@ -146,6 +458,9 @@ $color-white2: #aeb2bb;
 		height: 90%;
 		width: 50%;
 		background-color: $color-black2;
+		@media only screen and (max-width: 56.25rem) {
+			display: none;
+		}
 	}
 }
 
@@ -161,12 +476,26 @@ $color-white2: #aeb2bb;
 		font-family: "editor's note", sans-serif;
 		font-size: 3rem;
 		margin-bottom: 3rem;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 2rem;
+		}
+
+		@media only screen and (max-width: 30rem) {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 
 	&Components {
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			width: 80%;
+		}
 
 		&UserBox {
 			display: flex;
@@ -176,7 +505,7 @@ $color-white2: #aeb2bb;
 			margin-bottom: 2rem;
 		}
 
-		&Image {
+		&ImageContainer {
 			width: 8rem;
 			height: 8rem;
 			border-radius: 50%;
@@ -185,12 +514,35 @@ $color-white2: #aeb2bb;
 			justify-content: center;
 			align-items: center;
 			overflow: hidden;
+			@media only screen and (max-width: 56.25rem) {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+
+		&Image {
+			width: 8rem;
+			height: 8rem;
+			background-size: cover;
+			@media only screen and (max-width: 56.25rem) {
+				width: 4rem;
+				height: 4rem;
+			}
 		}
 
 		&Name {
 			font-family: "editor's note", sans-serif;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			font-weight: bold;
+			@media only screen and (max-width: 30rem) {
+				font-size: 2rem;
+			}
+			@media only screen and (max-width: 26.875rem) {
+				font-size: 1.7rem;
+			}
+			@media only screen and (max-width: 20rem) {
+				font-size: 1.3rem;
+			}
 		}
 		&TextContainer {
 			margin-bottom: 3rem;
@@ -199,6 +551,36 @@ $color-white2: #aeb2bb;
 			font-size: 2.5rem;
 			font-family: "oswald", serif;
 			margin-bottom: 0.5rem;
+			@media only screen and (max-width: 56.25rem) {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 1.5rem;
+			}
+			@media only screen and (max-width: 37.5rem) {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 2.4rem;
+			}
+			@media only screen and (max-width: 30rem) {
+				width: 80%;
+				margin: 0 auto;
+				font-size: 2.4rem;
+			}
+			@media only screen and (max-width: 26.875rem) {
+				width: 80%;
+				margin: 0 auto;
+				font-size: 2.1rem;
+			}
+			@media only screen and (max-width: 25rem) {
+				width: 80%;
+				margin: 0 auto;
+				font-size: 1.8rem;
+			}
+			@media only screen and (max-width: 23.75rem) {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 1.6rem;
+			}
 		}
 	}
 
@@ -212,6 +594,15 @@ $color-white2: #aeb2bb;
 		cursor: pointer;
 		border: 1px solid $color-black;
 		transition: all 0.3s;
+		@media only screen and (max-width: 56.25rem) {
+			margin-top: 3rem;
+		}
+		@media only screen and (max-width: 26.5rem) {
+			padding: 1rem 1.5rem;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			padding: 1rem 1.5rem;
+		}
 
 		&:hover {
 			background-color: transparent;
@@ -231,15 +622,44 @@ $color-white2: #aeb2bb;
 			$color-black 50%,
 			$color-primary 50%
 		);
-		padding: 1rem 0 1rem 2rem;
+		display: flex;
+		align-items: center;
+		padding-left: 2rem;
 		margin-bottom: 2rem;
 		height: 6.5rem;
+		@media only screen and (max-width: 56.25rem) {
+			height: 6.5rem;
+			background-image: none;
+			background-color: $color-black;
+			justify-content: center;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			height: 4.5rem;
+		}
 	}
 
 	&Heading {
 		font-size: 3rem;
 		font-family: "editor's note", sans-serif;
 		color: $color-primary;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 2rem;
+		}
+		@media only screen and (max-width: 30rem) {
+			font-size: 2.1rem;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			font-size: 1.9rem;
+		}
+		@media only screen and (max-width: 25rem) {
+			font-size: 1.7rem;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			font-size: 1.5rem;
+		}
+		@media only screen and (max-width: 20rem) {
+			font-size: 1.3rem;
+		}
 	}
 
 	&Item {
@@ -250,11 +670,40 @@ $color-white2: #aeb2bb;
 		align-items: center;
 		padding-left: 2rem;
 		margin-bottom: 2rem;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+			justify-content: center;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 25rem) {
+			height: 4.5rem;
+		}
 
 		&Text {
 			color: $color-primary;
 			font-family: "oswald", serif;
 			font-size: 2rem;
+			@media only screen and (max-width: 56.25rem) {
+				font-size: 1.6rem;
+			}
+			@media only screen and (max-width: 26.875rem) {
+				font-size: 1.4rem;
+			}
+			@media only screen and (max-width: 25rem) {
+				font-size: 1.3rem;
+			}
+			@media only screen and (max-width: 23.75rem) {
+				font-size: 1.2rem;
+			}
+			@media only screen and (max-width: 20rem) {
+				font-size: 1.1rem;
+			}
+		}
+	}
+	&ButtonContainer {
+		overflow: hidden;
+		@media only screen and (max-width: 56.25rem) {
+			text-align: center;
 		}
 	}
 
@@ -268,6 +717,20 @@ $color-white2: #aeb2bb;
 		cursor: pointer;
 		border: 1px solid $color-black;
 		transition: all 0.3s;
+		@media only screen and (max-width: 56.25rem) {
+		}
+		@media only screen and (max-width: 26.875rem) {
+			padding: 1rem 1.3rem;
+			font-size: 1.3rem;
+		}
+		@media only screen and (max-width: 25rem) {
+			padding: 0.7rem 1.2rem;
+			font-size: 1.1rem;
+		}
+		@media only screen and (max-width: 23.75rem) {
+			padding: 0.5rem 1rem;
+			font-size: 1.1rem;
+		}
 
 		&:hover {
 			background-color: transparent;
