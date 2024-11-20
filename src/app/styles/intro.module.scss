@@ -16,6 +16,9 @@ $color-black2: #1e1e1e;
 		background-color: $color-black2;
 		position: relative;
 		height: 100%;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+		}
 	}
 	&Right {
 		position: absolute;
@@ -24,6 +27,9 @@ $color-black2: #1e1e1e;
 		width: 55%;
 		background-color: $color-black;
 		height: 100%;
+		@media only screen and (max-width: 56.25rem) {
+			display: none;
+		}
 	}
 }
 

@@ -6,16 +6,21 @@ $color-white: #ffffff;
 $color-white2: #aeb2bb;
 
 .Footer {
-	height: 50rem;
 	background-color: $color-black;
 	padding: 2rem 7rem;
 	color: $color-primary;
+	@media only screen and (max-width: 56.25rem) {
+		padding: 2rem;
+	}
 
 	&Top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 10rem;
+		@media only screen and (max-width: 56.25rem) {
+			margin-bottom: 4rem;
+		}
 	}
 
 	&Logo {
@@ -23,29 +28,51 @@ $color-white2: #aeb2bb;
 			color: $color-primary;
 			font-family: "editor's note", sans-serif;
 			font-size: 4rem;
+			@media only screen and (max-width: 56.25rem) {
+				font-size: 2rem;
+			}
 		}
 	}
 	&HeadingText {
 		font-family: "oswald", serif;
 		font-size: 2rem;
 		margin-bottom: 1rem;
-	}
-	&NavigationLinksContainer {
-		display: flex;
-		font-family: "oswald", serif;
-		gap: 2rem;
-	}
-
-	&NavigationLinksItem {
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-		color: $color-white2;
+		@media only screen and (max-width: 56.25rem) {
+			font-size: 1rem;
+		}
 	}
 
 	&Center {
 		display: flex;
 		justify-content: space-between;
+		gap: 25rem;
 		margin-bottom: 10rem;
+		@media only screen and (max-width: 56.25rem) {
+			flex-direction: column;
+			margin-bottom: 5rem;
+			gap: 5rem;
+		}
+		&Box1 {
+			width: 50%;
+			display: flex;
+			justify-content: space-between;
+			@media only screen and (max-width: 56.25rem) {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 2rem;
+				width: 100%;
+			}
+		}
+		&Box2 {
+			width: 50%;
+			display: flex;
+			justify-content: space-between;
+			@media only screen and (max-width: 56.25rem) {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+		}
 
 		&Heading {
 			color: $color-white2;
@@ -64,6 +91,9 @@ $color-white2: #aeb2bb;
 			&:not(:last-child) {
 				margin-bottom: 1rem;
 			}
+			@media only screen and (max-width: 56.25rem) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -71,6 +101,10 @@ $color-white2: #aeb2bb;
 		display: flex;
 		justify-content: space-between;
 		width: 70%;
+		@media only screen and (max-width: 56.25rem) {
+			flex-direction: column;
+			width: 100%;
+		}
 
 		&Item1 {
 			color: $color-white2;
@@ -86,6 +120,9 @@ $color-white2: #aeb2bb;
 				font-size: 1.5rem;
 				font-family: "oswald", serif;
 				gap: 2rem;
+				@media only screen and (max-width: 56.25rem) {
+					width: 100%;
+				}
 			}
 		}
 
@@ -96,6 +133,14 @@ $color-white2: #aeb2bb;
 			align-items: center;
 			border-radius: 3rem;
 			width: 45%;
+			@media only screen and (max-width: 56.25rem) {
+				visibility: hidden;
+				height: 0;
+				width: 0;
+				margin: 0;
+				padding: 0;
+			}
+
 			&List {
 				display: flex;
 				color: $color-black;
@@ -107,9 +152,9 @@ $color-white2: #aeb2bb;
 			}
 			&Link {
 				background-color: $color-black;
-                color: $color-white;
-                padding: 1rem 3rem;
-                border-radius: 3rem;
+				color: $color-white;
+				padding: 1rem 3rem;
+				border-radius: 3rem;
 			}
 		}
 	}
