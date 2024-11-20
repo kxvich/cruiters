@@ -7,6 +7,7 @@ import Intro from "./components/intro";
 import Main from "./components/Main";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
+import NavBar from "./components/NavBar";
 
 export default function Page() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +27,8 @@ export default function Page() {
 				{isLoading ? (
 					<Intro key={"intro"} />
 				) : (
-					<div key={"main-content"}>
+					<div key={"maincontent"}>
+						<NavBar />
 						<Header />
 						<Main />
 						<Footer />

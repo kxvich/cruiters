@@ -9,11 +9,20 @@ $color-white2: #aeb2bb;
 	background-color: $color-primary;
 	position: relative;
 
+	@media only screen and (max-width: 56.25rem) {
+		flex-direction: column;
+	}
+
 	&Left {
 		height: 98%;
 		width: 45%;
-		background-image: url("/pexels-adrien-olichon-1257089-2387793.jpg");
+		background-image: url("/pexels-adrien-olichon-1257089-2387793.webp");
 		position: relative;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+			order: 2;
+			height: 20%;
+		}
 
 		&ButtonContainer {
 			position: absolute;
@@ -35,6 +44,42 @@ $color-white2: #aeb2bb;
 				background-color: transparent;
 				color: $color-primary;
 			}
+			@media only screen and (max-width: 30rem) {
+				padding: 2rem 3.5rem;
+				margin-left: 1rem;
+				margin-bottom: 2.5rem;
+			}
+			@media only screen and (max-width: 26.875rem) {
+				padding: 1.2rem 2rem;
+				margin-left: 1rem;
+				margin-bottom: 2.5rem;
+			}
+
+			@media only screen and (max-width: 25.875rem) {
+				padding: 1rem 1.5rem;
+				margin-left: 1rem;
+				margin-bottom: 2.5rem;
+			}
+
+			@media only screen and (max-width: 24.375rem) {
+				padding: 1rem 1.5rem;
+				margin-left: 1rem;
+				margin-bottom: 2rem;
+			}
+			@media only screen and (max-width: 23.438rem) {
+				padding: 1rem 1.5rem;
+				margin-left: 1rem;
+				margin-bottom: 1rem;
+			}
+			@media only screen and (max-width: 22.5rem) {
+				padding: 1rem 1.5rem;
+				margin-left: 1rem;
+				margin-bottom: 1rem;
+			}
+			@media only screen and (max-width: 20rem) {
+				padding: 1rem 1.5rem;
+				margin-left: 0.25rem;
+			}
 		}
 	}
 	&Right {
@@ -46,9 +91,19 @@ $color-white2: #aeb2bb;
 		flex-direction: column;
 		justify-content: center;
 		font-family: "editor's note", sans-serif;
+		@media only screen and (max-width: 56.25rem) {
+			width: 100%;
+		}
+		@media only screen and (max-width: 26.875rem) {
+			padding-left: 1rem;
+		}
+
 
 		&TextBox {
 			width: 60%;
+			@media only screen and (max-width: 56.25rem) {
+				width: 100%;
+			}
 		}
 
 		&TextContainer1 {
@@ -67,21 +122,60 @@ $color-white2: #aeb2bb;
 				font-size: 1.3rem;
 				letter-spacing: 0.2rem;
 				font-family: "oswald", serif;
+				@media only screen and (max-width: 20rem) {
+					font-size: 1rem;
+				}
+				@media only screen and (max-width: 22.5rem) {
+					font-size: 1.1rem;
+				}
 			}
 		}
-		// &TextContainer3 {
-		// }
+		
 		&TextContainer4 {
 			position: absolute;
 			bottom: 2rem;
 			right: 2rem;
+			@media only screen and (max-width: 56.25rem) {
+				color: $color-primary;
+			}
+
+			@media only screen and (max-width: 30rem) {
+				bottom: 4.5rem;
+			}
+
+			@media only screen and (max-width: 26.875rem) {
+				bottom: 4rem;
+			}
+
+			@media only screen and (max-width: 24.375rem) {
+				bottom: 3rem;
+			}
 		}
 
 		h1 {
 			font-size: 10rem;
+			@media only screen and (max-width: 26.875rem) {
+				font-size: 9rem;
+			}
+			@media only screen and (max-width: 25.875rem) {
+				font-size: 8.5rem;
+			}
+			@media only screen and (max-width: 24.375rem) {
+				font-size: 8rem;
+			}
+			@media only screen and (max-width: 23.438rem) {
+				font-size: 7.5rem;
+			}
+
+			@media only screen and (max-width: 20rem) {
+				font-size: 6.5rem;
+			}
 		}
 		h2 {
 			font-size: 3rem;
+			@media only screen and (max-width: 20rem) {
+				font-size: 2rem;
+			}
 		}
 		h4 {
 			font-size: 1.2rem;
