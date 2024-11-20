@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import styles from "../styles/main.module.scss";
-import Image from "next/image";
 import { useInView, motion } from "framer-motion";
 
 const moveUp = {
@@ -47,7 +46,7 @@ const fillInRightShort = {
 
 	animate: {
 		opacity: 1,
-		width: "49%",
+		width: "100%",
 	},
 };
 
@@ -228,6 +227,7 @@ function Main() {
 				<motion.div
 					ref={containerRef3}
 					className={styles.sectionDescriptionButtonContainer}
+					style={{overflow: "hidden"}}
 				>
 					<motion.button
 						variants={moveUp}
@@ -354,15 +354,12 @@ function Main() {
 								ease: [0.76, 0, 0.24, 1],
 								delay: 0.1,
 							}}
-							className={styles.sectionTestimonialsComponentsImage}
+							className={styles.sectionTestimonialsComponentsImageContainer}
 						>
-							<Image
-								src={"/userImage1.jpg"}
-								alt="user-image1"
-								width={70}
-								height={70}
-								style={{ borderRadius: "50%" }}
-							/>
+							<div
+								className={styles.sectionTestimonialsComponentsImage}
+								style={{ backgroundImage: "url(/userImage1.jpg)" }}
+							></div>
 						</motion.div>
 						<motion.p
 							variants={moveDown}
@@ -383,45 +380,60 @@ function Main() {
 						className={styles.sectionTestimonialsComponentsTextContainer}
 					>
 						{Text3.map((item, i) => (
-							<motion.h1
-								variants={moveDown}
-								initial="hidden"
-								animate={inView5 ? "animate" : ""}
-								transition={{
-									duration: 0.8,
-									ease: [0.76, 0, 0.24, 1],
-									delay: i * 0.025,
-								}}
-								className={styles.sectionTestimonialsComponentsText}
-								key={`k_${i}`}
-							>
-								{item}
-							</motion.h1>
+							<div key={`k_${i}`}>
+								<motion.h1
+									variants={moveDown}
+									initial="hidden"
+									animate={inView5 ? "animate" : ""}
+									transition={{
+										duration: 0.8,
+										ease: [0.76, 0, 0.24, 1],
+										delay: i * 0.025,
+									}}
+									className={styles.sectionTestimonialsComponentsText}
+								>
+									{item}
+								</motion.h1>
+							</div>
 						))}
 					</div>
 
 					<div className={styles.sectionTestimonialsComponentsUserBox}>
-						<div className={styles.sectionTestimonialsComponentsImage}>
-							<Image
-								src={"/userImage2.jpg"}
-								alt="user-image1"
-								width={70}
-								height={70}
-								style={{ borderRadius: "50%" }}
-							/>
+						<div className={styles.sectionTestimonialsComponentsImageContainer}>
+							<div
+								className={styles.sectionTestimonialsComponentsImage}
+								style={{
+									backgroundImage: "url(/userImage2.jpg)",
+									backgroundPosition: "bottom",
+								}}
+							></div>
 						</div>
 						<p className={styles.sectionTestimonialsComponentsName}>
 							Ross Micheals
 						</p>
 					</div>
-					<h2 className={styles.sectionTestimonialsComponentsText}>
-						&quot; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Culpa earum doloribus modi, ut consequuntur molestiae possimus
-						reprehenderit corrupti ad, esse rem dolore explicabo! Voluptate
-						mollitia tempora, nulla quidem eveniet vero commodi nam nostrum
-						quis, velit dolore cumque adipisci? Aspernatur deleniti odio nisi
-						aliquid magni repellendus tempora rem! Beatae, inventore sunt.&quot;
-					</h2>
+					<div
+						style={{ overflow: "hidden" }}
+						className={styles.sectionTestimonialsComponentsTextContainer}
+					>
+						{Text3.map((item, i) => (
+							<div key={`k_${i}`}>
+								<motion.h1
+									variants={moveDown}
+									initial="hidden"
+									animate={inView5 ? "animate" : ""}
+									transition={{
+										duration: 0.8,
+										ease: [0.76, 0, 0.24, 1],
+										delay: i * 0.025,
+									}}
+									className={styles.sectionTestimonialsComponentsText}
+								>
+									{item}
+								</motion.h1>
+							</div>
+						))}
+					</div>
 					<button className={styles.sectionTestimonialsButton}>
 						More Stories
 					</button>
@@ -449,7 +461,7 @@ function Main() {
 						}}
 						className={styles.sectionFaqHeading}
 					>
-						Frequenty Asked Questions
+						Frequently Asked Questions
 					</motion.h3>
 				</motion.div>
 				<div ref={containerRef7} className={styles.sectionFaqItemContainer}>

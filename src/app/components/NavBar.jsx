@@ -21,7 +21,7 @@ function NavBar() {
 				variants={moveDown}
 				initial="hidden"
 				animate="animate"
-				transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 2.5 }}
+				transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
 				className={styles.NavBarList}
 			>
 				<li className={`${styles.NavBarListItem} ${styles.Menu}`}>MENU</li>
