@@ -35,13 +35,6 @@ export default function Page() {
 					</div>
 				)}
 			</AnimatePresence>
-			{/* {!isLoading && (
-				<>
-					<Header />
-					<Main />
-					<Footer />
-				</>
-			)} */}
 		</>
 	);
 }
