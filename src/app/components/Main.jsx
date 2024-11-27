@@ -64,15 +64,11 @@ const Text2 = [
 	"branding to attract the best fit. Whether you need temporary staffing or permanent",
 	" placements, we provide flexible, tailored strategies to meet your hiring needs and drive your business forward.",
 ];
-// const Text2 = [
-// 	"Our recruiting company connects employers with top-tier talent through efficient customized hiring solutions. We streamline the process by delivering pre-screened",
-// 	"candidates, leverage industry expertise to find specialized skills, and support employer branding to attract the best fit. Whether you need temporary staffing or permanent",
-// 	"placements, we provide flexible, tailored strategies to meet your hiring needs and drive",
-// 	"your business forward.",
-// ];
 const Text3 = [
-	"Our recruiting company is dedicated to helping job seekers find their ideal roles with ease and confidence. We connect talented professionals like you with leading employers,offering opportunities tailored to your skills and career goals. Through our industry expertise, we match you with positions that align with your unique qualifications and aspirations.",
-	"Whether you're seeking temporary assignments, freelance projects, or permanent roles, we provide personalized support, guidance, and resources to ensure your success. Let us be your partner in navigating the job market and securing the opportunities you deserve.",
+	"Our recruiting company is dedicated to helping job seekers find their ideal roles with",
+	"ease and confidence. We connect talented professionals like you with leading",
+	"employers,offering opportunities tailored to your skills and career goals. Through our",
+	"industry expertise, we match you with positions that align with your unique qualifications and aspirations.",
 ];
 const Text4 = [
 	"Exceptional Service and Results!",

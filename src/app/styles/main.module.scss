@@ -27,7 +27,7 @@ $color-white2: #aeb2bb;
 		}
 	}
 	&Paragraph {
-		font-family: "Editor's note", sans-serif;
+		font-family: "oswald", serif;
 		font-size: 3rem;
 		color: $color-white;
 		width: 80%;
@@ -38,24 +38,35 @@ $color-white2: #aeb2bb;
 			font-size: 1.7rem;
 			width: 100%;
 		}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.5rem;
+			width: 80%;
+			margin-bottom: 0.2rem;
+		}
 		@media only screen and (max-width: 30rem) {
-			font-size: 2rem;
-			width: 85%;
+			font-size: 2.4rem;
+			width: 90%;
 			margin-bottom: 0.2rem;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.7rem;
-			width: 85%;
+			font-size: 2.1rem;
+			width: 90%;
 			margin-bottom: 0.2rem;
 		}
+		@media only screen and (max-width: 25rem) {
+			font-size: 1.9rem;
+			width: 90%;
+			margin-bottom: 0.2rem;
+		}
+
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.6rem;
-			width: 80%;
+			font-size: 1.8rem;
+			width: 90%;
 			margin-bottom: 0.2rem;
 		}
 		@media only screen and (max-width: 20rem) {
-			font-size: 1.3rem;
-			width: 80%;
+			font-size: 1.5rem;
+			width: 90%;
 			margin-bottom: 0.2rem;
 		}
 	}
@@ -67,9 +78,7 @@ $color-white2: #aeb2bb;
 			$color-black 50%
 		);
 		height: 6.5rem;
-		display: flex;
-		align-items: center;
-		padding-left: 2rem;
+		position: relative;
 		margin-bottom: 2rem;
 		@media only screen and (max-width: 56.25rem) {
 			height: 5.5rem;
@@ -79,7 +88,7 @@ $color-white2: #aeb2bb;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			height: 4rem;
+			height: 5rem;
 			background-image: none;
 			background-color: $color-primary;
 			justify-content: center;
@@ -87,7 +96,7 @@ $color-white2: #aeb2bb;
 		}
 
 		@media only screen and (max-width: 23.75rem) {
-			height: 3.5rem;
+			height: 4.5rem;
 			background-image: none;
 			background-color: $color-primary;
 			justify-content: center;
@@ -97,17 +106,22 @@ $color-white2: #aeb2bb;
 	&Heading1 {
 		font-size: 3rem;
 		font-family: "editor's note", sans-serif;
+		position: absolute;
+		top: 50%;
+		left: 2rem;
+		transform: translateY(-50%) !important;
+
 		@media only screen and (max-width: 56.25rem) {
 			font-size: 2rem;
+			left: 50%;
+			transform: translate(-50%, -50%) !important;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.7rem;
+			font-size: 2.1rem;
 		}
-		@media only screen and (max-width: 25rem) {
-			font-size: 1.7rem;
-		}
+
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 		}
 	}
 	&ParagraphContainer2 {
@@ -134,34 +148,40 @@ $color-white2: #aeb2bb;
 			margin: 0 auto;
 			padding-left: 0;
 		}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.4rem;
+			width: 80%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
 		@media only screen and (max-width: 30rem) {
-			font-size: 1.6rem;
-			width: 60%;
+			font-size: 2.4rem;
+			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.6rem;
+			font-size: 2rem;
 			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 25rem) {
-			font-size: 1.6rem;
-			width: 70%;
+			font-size: 1.9rem;
+			width: 90%;
 			margin: 0 auto;
 			margin-bottom: 0.1rem;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.4rem;
-			width: 70%;
+			font-size: 1.8rem;
+			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 20rem) {
-			font-size: 1.2rem;
-			width: 70%;
+			font-size: 1.5rem;
+			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
@@ -183,11 +203,11 @@ $color-white2: #aeb2bb;
 			background-color: $color-primary;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			height: 4rem;
+			height: 5rem;
 		}
 
 		@media only screen and (max-width: 23.75rem) {
-			height: 3.5rem;
+			height: 4.5rem;
 		}
 	}
 	&Heading2 {
@@ -204,12 +224,12 @@ $color-white2: #aeb2bb;
 			transform: translate(-50%, -50%) !important;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.7rem;
+			font-size: 2.1rem;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -221,10 +241,54 @@ $color-white2: #aeb2bb;
 			text-align: center;
 		}
 		@media only screen and (max-width: 20rem) {
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 			text-align: center;
 		}
 	}
+	// &Paragraph3 {
+	// 	color: $color-white;
+	// 	font-family: "oswald", serif;
+	// 	padding-left: 52%;
+	// 	font-size: 2rem;
+	// 	width: 100%;
+	// 	margin-bottom: 0.5rem;
+	// 	@media only screen and (max-width: 56.25rem) {
+	// 		width: 90%;
+	// 		font-size: 1.7rem;
+	// 		padding-left: 0;
+	// 		margin: 0 auto;
+	// 	}
+	// 	@media only screen and (max-width: 30rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 80%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 26.875rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 90%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 25rem) {
+	// 		font-size: 1.6rem;
+	// 		width: 85%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 23.75rem) {
+	// 		font-size: 1.4rem;
+	// 		width: 90%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// 	@media only screen and (max-width: 20rem) {
+	// 		font-size: 1.2rem;
+	// 		width: 80%;
+	// 		margin: 0.1rem auto;
+	// 		padding-left: 0;
+	// 	}
+	// }
 	&Paragraph3 {
 		color: $color-white;
 		font-family: "oswald", serif;
@@ -233,38 +297,45 @@ $color-white2: #aeb2bb;
 		width: 100%;
 		margin-bottom: 0.5rem;
 		@media only screen and (max-width: 56.25rem) {
-			width: 90%;
 			font-size: 1.7rem;
-			padding-left: 0;
+			width: 90%;
 			margin: 0 auto;
+			padding-left: 0;
 		}
-		@media only screen and (max-width: 30rem) {
-			font-size: 1.6rem;
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 2.4rem;
 			width: 80%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
+		@media only screen and (max-width: 30rem) {
+			font-size: 2.4rem;
+			width: 90%;
+			margin: 0.1rem auto;
+			padding-left: 0;
+		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.6rem;
+			font-size: 2rem;
 			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 25rem) {
-			font-size: 1.6rem;
-			width: 85%;
-			margin: 0.1rem auto;
+			font-size: 1.9rem;
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 0.1rem;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.4rem;
+			font-size: 1.8rem;
 			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
 		@media only screen and (max-width: 20rem) {
-			font-size: 1.2rem;
-			width: 80%;
+			font-size: 1.5rem;
+			width: 90%;
 			margin: 0.1rem auto;
 			padding-left: 0;
 		}
@@ -293,8 +364,8 @@ $color-white2: #aeb2bb;
 			color: $color-primary;
 		}
 		@media only screen and (max-width: 30rem) {
-			padding: 1.4rem 2rem;
-			font-size: 1.5rem;
+			padding: 2rem 4rem;
+			font-size: 1.8rem;
 		}
 		@media only screen and (max-width: 26.875rem) {
 			padding: 1.4rem 2rem;
@@ -408,8 +479,9 @@ $color-white2: #aeb2bb;
 		@media only screen and (max-width: 56.25rem) {
 			font-size: 2rem;
 		}
+
 		@media only screen and (max-width: 30rem) {
-			font-size: 1.8rem;
+			font-size: 2rem;
 			margin-bottom: 2rem;
 		}
 	}
@@ -443,10 +515,6 @@ $color-white2: #aeb2bb;
 			align-items: center;
 			overflow: hidden;
 			@media only screen and (max-width: 56.25rem) {
-				width: 3rem;
-				height: 3rem;
-			}
-			@media only screen and (max-width: 30rem) {
 				width: 4rem;
 				height: 4rem;
 			}
@@ -457,10 +525,6 @@ $color-white2: #aeb2bb;
 			height: 8rem;
 			background-size: cover;
 			@media only screen and (max-width: 56.25rem) {
-				width: 3rem;
-				height: 3rem;
-			}
-			@media only screen and (max-width: 30rem) {
 				width: 4rem;
 				height: 4rem;
 			}
@@ -468,16 +532,16 @@ $color-white2: #aeb2bb;
 
 		&Name {
 			font-family: "editor's note", sans-serif;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			font-weight: bold;
 			@media only screen and (max-width: 30rem) {
 				font-size: 2rem;
 			}
 			@media only screen and (max-width: 26.875rem) {
-				font-size: 1.3rem;
+				font-size: 1.7rem;
 			}
 			@media only screen and (max-width: 20rem) {
-				font-size: 1rem;
+				font-size: 1.3rem;
 			}
 		}
 		&TextContainer {
@@ -492,25 +556,30 @@ $color-white2: #aeb2bb;
 				margin: 0 auto;
 				font-size: 1.5rem;
 			}
+			@media only screen and (max-width: 37.5rem) {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 2.4rem;
+			}
 			@media only screen and (max-width: 30rem) {
 				width: 80%;
 				margin: 0 auto;
-				font-size: 1.8rem;
+				font-size: 2.4rem;
 			}
 			@media only screen and (max-width: 26.875rem) {
 				width: 80%;
 				margin: 0 auto;
-				font-size: 1.6rem;
+				font-size: 2.1rem;
 			}
 			@media only screen and (max-width: 25rem) {
 				width: 80%;
 				margin: 0 auto;
-				font-size: 1.3rem;
+				font-size: 1.8rem;
 			}
 			@media only screen and (max-width: 23.75rem) {
 				width: 90%;
 				margin: 0 auto;
-				font-size: 1.3rem;
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -559,13 +628,13 @@ $color-white2: #aeb2bb;
 		margin-bottom: 2rem;
 		height: 6.5rem;
 		@media only screen and (max-width: 56.25rem) {
-			height: 5.5rem;
+			height: 6.5rem;
 			background-image: none;
 			background-color: $color-black;
 			justify-content: center;
 		}
 		@media only screen and (max-width: 23.75rem) {
-			height: 3.5rem;
+			height: 4.5rem;
 		}
 	}
 
@@ -577,19 +646,19 @@ $color-white2: #aeb2bb;
 			font-size: 2rem;
 		}
 		@media only screen and (max-width: 30rem) {
-			font-size: 1.65rem;
+			font-size: 2.1rem;
 		}
 		@media only screen and (max-width: 26.875rem) {
-			font-size: 1.5rem;
+			font-size: 1.9rem;
 		}
 		@media only screen and (max-width: 25rem) {
-			font-size: 1.3rem;
+			font-size: 1.7rem;
 		}
 		@media only screen and (max-width: 23.75rem) {
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 		}
 		@media only screen and (max-width: 20rem) {
-			font-size: 1.1rem;
+			font-size: 1.3rem;
 		}
 	}
 
@@ -604,9 +673,10 @@ $color-white2: #aeb2bb;
 		@media only screen and (max-width: 56.25rem) {
 			width: 100%;
 			justify-content: center;
+			padding-left: 0;
 		}
 		@media only screen and (max-width: 25rem) {
-			height: 4rem;
+			height: 4.5rem;
 		}
 
 		&Text {
@@ -614,19 +684,19 @@ $color-white2: #aeb2bb;
 			font-family: "oswald", serif;
 			font-size: 2rem;
 			@media only screen and (max-width: 56.25rem) {
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 			}
 			@media only screen and (max-width: 26.875rem) {
-				font-size: 1.3rem;
+				font-size: 1.4rem;
 			}
 			@media only screen and (max-width: 25rem) {
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 			}
 			@media only screen and (max-width: 23.75rem) {
 				font-size: 1.2rem;
 			}
 			@media only screen and (max-width: 20rem) {
-				font-size: 1rem;
+				font-size: 1.1rem;
 			}
 		}
 	}

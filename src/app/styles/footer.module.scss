@@ -36,9 +36,8 @@ $color-white2: #aeb2bb;
 	&HeadingText {
 		font-family: "oswald", serif;
 		font-size: 2rem;
-		margin-bottom: 1rem;
 		@media only screen and (max-width: 56.25rem) {
-			font-size: 1rem;
+			font-size: 1.3rem;
 		}
 	}
 

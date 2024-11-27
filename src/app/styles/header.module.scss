@@ -45,10 +45,17 @@ $color-white2: #aeb2bb;
 				background-color: transparent;
 				color: $color-primary;
 			}
+			@media only screen and (max-width: 37.5rem) {
+				padding: 2rem 3.5rem;
+				margin-left: 1rem;
+				margin-bottom: 1rem;
+				font-size: 1.6rem;
+			}
 			@media only screen and (max-width: 30rem) {
 				padding: 2rem 3.5rem;
 				margin-left: 1rem;
 				margin-bottom: 2.5rem;
+				font-size: 1.5rem;
 			}
 			@media only screen and (max-width: 26.875rem) {
 				padding: 1.2rem 2rem;
@@ -76,6 +83,8 @@ $color-white2: #aeb2bb;
 				padding: 1rem 1.5rem;
 				margin-left: 1rem;
 				margin-bottom: 1rem;
+				font-size: 1rem;
+
 			}
 			@media only screen and (max-width: 20rem) {
 				padding: 1rem 1.5rem;
@@ -140,6 +149,10 @@ $color-white2: #aeb2bb;
 				color: $color-primary;
 			}
 
+			@media only screen and (max-width: 37.5rem) {
+				bottom: 3.5rem;
+			}
+
 			@media only screen and (max-width: 30rem) {
 				bottom: 4.5rem;
 			}
@@ -150,6 +163,10 @@ $color-white2: #aeb2bb;
 
 			@media only screen and (max-width: 24.375rem) {
 				bottom: 3rem;
+			}
+
+			@media only screen and (max-width: 20rem) {
+				bottom: 2.5rem;
 			}
 		}
 
