@@ -58,39 +58,64 @@ const Text = [
 	"beneficial outcomes through a seamless, supportive process.",
 ];
 const Text2 = [
-	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quibusdam quod ab",
-	"labore quam quos accusantium iusto dignissimos fuga dolorum inventore provident porro",
-	"ex quis adipisci sequi delectus deleniti mollitia aperiam eveniet debitis, ipsum minus! Modi",
-	"facere sit voluptates quis eius, impedit repellat nostrum magni? Corporis natus placeat",
+	"Our recruiting company connects employers with top-tier talent through efficient",
+	"customized hiring solutions. We streamline the process by delivering pre-screened",
+	" candidates, leverage industry expertise to find specialized skills, and support employer",
+	"branding to attract the best fit. Whether you need temporary staffing or permanent",
+	" placements, we provide flexible, tailored strategies to meet your hiring needs and drive your business forward.",
 ];
+// const Text2 = [
+// 	"Our recruiting company connects employers with top-tier talent through efficient customized hiring solutions. We streamline the process by delivering pre-screened",
+// 	"candidates, leverage industry expertise to find specialized skills, and support employer branding to attract the best fit. Whether you need temporary staffing or permanent",
+// 	"placements, we provide flexible, tailored strategies to meet your hiring needs and drive",
+// 	"your business forward.",
+// ];
 const Text3 = [
-	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum doloribus modi, ut consequuntur molestiae",
-	"possimus reprehenderit corrupti ad, esse rem dolore explicabo! Voluptate mollitia tempora, nulla quidem eveniet vero ",
-	"commodi nam nostrum quis, velit dolore cumque adipisci? Aspernatur deleniti odio nisi aliquid magni repellendus",
-	"tempora rem! Beatae, inventore sunt.&quot",
+	"Our recruiting company is dedicated to helping job seekers find their ideal roles with ease and confidence. We connect talented professionals like you with leading employers,offering opportunities tailored to your skills and career goals. Through our industry expertise, we match you with positions that align with your unique qualifications and aspirations.",
+	"Whether you're seeking temporary assignments, freelance projects, or permanent roles, we provide personalized support, guidance, and resources to ensure your success. Let us be your partner in navigating the job market and securing the opportunities you deserve.",
+];
+const Text4 = [
+	"Exceptional Service and Results!",
+	"I had an amazing experience working with this recruiting company! From the first interaction, their team demonstrated professionalism and genuine care. They took the time to understand my business needs and delivered top-tier candidates that exceeded my expectations.",
+];
+const Text5 = [
+	"A Life-Changing Opportunity!",
+	"As a job seeker, I felt supported every step of the way with this recruiting company. They truly go above and beyond to connect candidates with the right opportunities. The team took the time to understand my skills and career goals, guiding me toward a position that was not only a great fit but also aligned with my long-term aspirations.",
 ];
 
 function Main() {
 	const containerRef = useRef(null);
-	const inView = useInView(containerRef, { margin: "-50px", once: true });
+	const inView = useInView(containerRef, { margin: "0px", once: true });
 
 	const containerRef2 = useRef(null);
-	const inView2 = useInView(containerRef2, { margin: "-50px", once: true });
+	const inView2 = useInView(containerRef2, { margin: "100px", once: true });
+
+	const containerRef2Paragraph = useRef(null);
+	const inView2paragraph = useInView(containerRef2Paragraph, {
+		margin: "100px",
+		once: true,
+	});
 
 	const containerRef3 = useRef(null);
-	const inView3 = useInView(containerRef3, { margin: "-50px", once: true });
+	const inView3 = useInView(containerRef3, { margin: "50px", once: true });
+
+	const containerRef3Paragraph = useRef(null);
+	const inView3paragraph = useInView(containerRef3Paragraph, {
+		margin: "50px",
+		once: true,
+	});
 
 	const containerRef4 = useRef(null);
-	const inView4 = useInView(containerRef4, { margin: "-50px", once: true });
+	const inView4 = useInView(containerRef4, { margin: "50px", once: true });
 
 	const containerRef5 = useRef(null);
-	const inView5 = useInView(containerRef5, { margin: "-50px", once: true });
+	const inView5 = useInView(containerRef5, { margin: "50px", once: true });
 
 	const containerRef6 = useRef(null);
-	const inView6 = useInView(containerRef6, { margin: "-50px", once: true });
+	const inView6 = useInView(containerRef6, { margin: "50px", once: true });
 
 	const containerRef7 = useRef(null);
-	const inView7 = useInView(containerRef7, { margin: "-50px", once: true });
+	const inView7 = useInView(containerRef7, { margin: "50px", once: true });
 
 	return (
 		<div className={styles.Main}>
@@ -111,7 +136,7 @@ function Main() {
 								initial="hidden"
 								animate={inView ? "animate" : ""}
 								transition={{
-									duration: 0.6,
+									duration: 0.8,
 									ease: [0.76, 0, 0.24, 1],
 									delay: i * 0.025,
 								}}
@@ -127,7 +152,7 @@ function Main() {
 					initial="hidden"
 					animate={inView2 ? "animate" : ""}
 					transition={{
-						duration: 0.6,
+						duration: 0.8,
 						ease: [0.76, 0, 0.24, 1],
 					}}
 					className={styles.sectionDescriptionHeading1Background}
@@ -137,7 +162,7 @@ function Main() {
 						initial="hidden"
 						animate={inView2 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 							delay: 0.15,
 						}}
@@ -147,30 +172,30 @@ function Main() {
 					</motion.h3>
 				</motion.div>
 				<motion.div
-					ref={containerRef2}
+					ref={containerRef2Paragraph}
 					className={styles.sectionDescriptionParagraphContainer2}
 				>
-					{Text2.map((item, i) => (
-						<p
-							style={{ overflow: "hidden" }}
-							key={`k_${i}`}
-							className={styles.sectionDescriptionParagraph2}
-						>
+					<p
+						style={{ overflow: "hidden" }}
+						className={styles.sectionDescriptionParagraph2}
+					>
+						{Text2.map((item, i) => (
 							<motion.span
+								key={`k_${i}`}
 								style={{ display: "inline-block" }}
 								variants={moveUp}
 								initial="hidden"
-								animate={inView2 ? "animate" : ""}
+								animate={inView2paragraph ? "animate" : ""}
 								transition={{
-									duration: 0.6,
+									duration: 0.8,
 									ease: [0.76, 0, 0.24, 1],
 									delay: i * 0.025,
 								}}
 							>
 								{item}
 							</motion.span>
-						</p>
-					))}
+						))}
+					</p>
 				</motion.div>
 				<motion.div
 					ref={containerRef3}
@@ -178,7 +203,7 @@ function Main() {
 					initial="hidden"
 					animate={inView3 ? "animate" : ""}
 					transition={{
-						duration: 0.6,
+						duration: 0.8,
 						ease: [0.76, 0, 0.24, 1],
 					}}
 					className={styles.sectionDescriptionHeading2Background}
@@ -188,7 +213,7 @@ function Main() {
 						initial="hidden"
 						animate={inView3 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 							delay: 0.25,
 						}}
@@ -198,10 +223,10 @@ function Main() {
 					</motion.h3>
 				</motion.div>
 				<motion.div
-					ref={containerRef3}
+					ref={containerRef3Paragraph}
 					className={styles.sectionDescriptionParagraphContainer3}
 				>
-					{Text2.map((item, i) => (
+					{Text3.map((item, i) => (
 						<p
 							style={{ overflow: "hidden" }}
 							key={`k_${i}`}
@@ -211,9 +236,9 @@ function Main() {
 								style={{ display: "inline-block" }}
 								variants={moveUp}
 								initial="hidden"
-								animate={inView3 ? "animate" : ""}
+								animate={inView3paragraph ? "animate" : ""}
 								transition={{
-									duration: 0.6,
+									duration: 0.8,
 									ease: [0.76, 0, 0.24, 1],
 									delay: i * 0.025,
 								}}
@@ -223,18 +248,17 @@ function Main() {
 						</p>
 					))}
 				</motion.div>
-
 				<motion.div
 					ref={containerRef3}
 					className={styles.sectionDescriptionButtonContainer}
-					style={{overflow: "hidden"}}
+					style={{ overflow: "hidden" }}
 				>
 					<motion.button
 						variants={moveUp}
 						initial="hidden"
 						animate={inView3 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 						}}
 						className={styles.sectionDescriptionButton}
@@ -262,7 +286,7 @@ function Main() {
 						initial="hidden"
 						animate={inView4 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 						}}
 						className={styles.sectionServicesLeftItem}
@@ -276,7 +300,7 @@ function Main() {
 						initial="hidden"
 						animate={inView4 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 							delay: 0.2,
 						}}
@@ -291,7 +315,7 @@ function Main() {
 						initial="hidden"
 						animate={inView4 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 							delay: 0.35,
 						}}
@@ -306,7 +330,7 @@ function Main() {
 						initial="hidden"
 						animate={inView4 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 							delay: 0.4,
 						}}
@@ -320,7 +344,7 @@ function Main() {
 				<motion.div
 					initial={{ scale: 0.5 }}
 					animate={{ scale: inView4 ? 1 : 0.5 }}
-					transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
+					transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
 					className={styles.sectionServicesRight}
 				></motion.div>
 			</section>
@@ -379,9 +403,9 @@ function Main() {
 						style={{ overflow: "hidden" }}
 						className={styles.sectionTestimonialsComponentsTextContainer}
 					>
-						{Text3.map((item, i) => (
+						{Text4.map((item, i) => (
 							<div key={`k_${i}`}>
-								<motion.h1
+								<motion.p
 									variants={moveDown}
 									initial="hidden"
 									animate={inView5 ? "animate" : ""}
@@ -393,7 +417,7 @@ function Main() {
 									className={styles.sectionTestimonialsComponentsText}
 								>
 									{item}
-								</motion.h1>
+								</motion.p>
 							</div>
 						))}
 					</div>
@@ -408,17 +432,27 @@ function Main() {
 								}}
 							></div>
 						</div>
-						<p className={styles.sectionTestimonialsComponentsName}>
+						<motion.p
+							variants={moveDown}
+							initial="hidden"
+							animate={inView5 ? "animate" : ""}
+							transition={{
+								duration: 0.8,
+								ease: [0.76, 0, 0.24, 1],
+								delay: 0.1,
+							}}
+							className={styles.sectionTestimonialsComponentsName}
+						>
 							Ross Micheals
-						</p>
+						</motion.p>
 					</div>
 					<div
 						style={{ overflow: "hidden" }}
 						className={styles.sectionTestimonialsComponentsTextContainer}
 					>
-						{Text3.map((item, i) => (
+						{Text5.map((item, i) => (
 							<div key={`k_${i}`}>
-								<motion.h1
+								<motion.p
 									variants={moveDown}
 									initial="hidden"
 									animate={inView5 ? "animate" : ""}
@@ -430,7 +464,7 @@ function Main() {
 									className={styles.sectionTestimonialsComponentsText}
 								>
 									{item}
-								</motion.h1>
+								</motion.p>
 							</div>
 						))}
 					</div>
@@ -445,7 +479,7 @@ function Main() {
 					initial="hidden"
 					animate={inView6 ? "animate" : ""}
 					transition={{
-						duration: 0.6,
+						duration: 0.8,
 						ease: [0.76, 0, 0.24, 1],
 					}}
 					className={styles.sectionFaqHeadingBackground}
@@ -470,7 +504,7 @@ function Main() {
 						initial="hidden"
 						animate={inView7 ? "animate" : ""}
 						transition={{
-							duration: 0.6,
+							duration: 0.8,
 							ease: [0.76, 0, 0.24, 1],
 						}}
 						className={styles.sectionFaqItem}
@@ -542,19 +576,21 @@ function Main() {
 							How long does it usually take to fill a position?
 						</motion.p>
 					</motion.div>
-					<motion.button
-						variants={moveUp}
-						initial="hidden"
-						animate={inView7 ? "animate" : ""}
-						transition={{
-							duration: 0.6,
-							ease: [0.76, 0, 0.24, 1],
-						}}
-						className={styles.sectionFaqButton}
-					>
-						{" "}
-						See More Questions
-					</motion.button>
+					<div className={styles.sectionFaqButtonContainer}>
+						<motion.button
+							variants={moveUp}
+							initial="hidden"
+							animate={inView7 ? "animate" : ""}
+							transition={{
+								duration: 0.6,
+								ease: [0.76, 0, 0.24, 1],
+							}}
+							className={styles.sectionFaqButton}
+						>
+							{" "}
+							See More Questions
+						</motion.button>
+					</div>
 				</div>
 			</section>
 		</div>
